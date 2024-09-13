@@ -66,6 +66,7 @@ router.get("/:productid/edit",isLoggedIn,  async(req,res)=>{
 
 router.patch("/:productid",isLoggedIn, async(req,res)=>{
 
+  
      const {productid} = req.params;
 
      const {name,img,price, desc} =req.body;
