@@ -37,6 +37,8 @@ router.post("/products/:productid/cart", async(req,res)=>{
 
         const product = await Product.findById(productid);
 
+
+        
         user.cart.push({
             name : product.name,
             price: product.price,
